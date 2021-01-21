@@ -1,0 +1,40 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.logoContainer {
+  position: relative;
+}
+
+.logo-container>img {
+  position: absolute;
+}
+
+.logoContainer>img:not(:first-child) {
+  width: 240px;
+}
+
+.spinningLogo {
+  pointer-events: none;
+  position: absolute;
+  top: 1.9rem;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinningLogo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

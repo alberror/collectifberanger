@@ -1,0 +1,54 @@
+.title {
+  font-weight: 100;
+  margin: 0 auto;
+  max-width: 1064px;
+  text-transform: uppercase;
+}
+
+.parentsGrid {
+  background-color: #FF9983;
+  display: grid;
+  grid-gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1064px;
+  padding: 1rem;
+}
+
+@media (max-width: 599px) {
+  .parentsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 839px) {
+  .parentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1099px) {
+  .parentsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .parentsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.parentCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.parentName {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+}
