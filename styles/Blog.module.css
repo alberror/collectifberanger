@@ -1,0 +1,23 @@
+.postsGrid {
+  display: grid;
+  grid-gap: 3rem;
+  margin: 2rem auto;
+  max-width: 1280px;
+  padding: 1rem;
+}
+
+@media (max-width: 799px) {
+  .postsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .postsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.postImage {
+  width: 100%;
+}
